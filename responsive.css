@@ -1,0 +1,80 @@
+/* For Tablet */
+@media all and (max-width: 1000px) {
+  .header-right a{
+    line-height: 0;
+    padding: 0;
+    float: none;
+
+  }
+    .header-right {
+    display:none;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .section {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+
+  .wahana {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .top-wrapper p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .txt-contents{
+    font-size: 15px;
+  }
+
+}
+
+/* For Smartphone */
+@media all and (max-width: 670px) {
+  .wahana {
+    width: 100%;
+  }
+  footer {
+    font-size: 60%;
+
+  }
+  footer img {
+  width: 125px;
+  }
+  .footer-right h4 {
+  margin-top: 25px;
+  padding: 0 2px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .top-wrapper {
+    text-align: center;
+  }
+  .header-right {
+    display:none;
+  }
+  .menu-icon {
+    display:block;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .section{
+   width : 100%;
+    }
+}
