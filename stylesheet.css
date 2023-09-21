@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+.allButFooter {
+    min-height: calc(100vh - 180px);
+    
+}
 body {
   margin:0;
   font-family: "Times New Roman";
@@ -65,7 +69,7 @@ header {
 }
 .top-wrapper h1 {
   opacity: 1;
-  font-size: 500%;
+  font-size: 50px;
   letter-spacing: 1px;
   margin-bottom: 10px;
 
@@ -224,7 +228,9 @@ h1  {
 
 footer {
   border-top: 1px solid #eee;
-  height:250px;
+  height:180px;
+  left: 0;
+  bottom: 0;
   width:100%;
   background-color: #006400;
   color: white;
@@ -262,14 +268,14 @@ footer {
 }
 
 footer img {
-  width: 180px;
+  width: 80px;
   margin-top: 5px;
 
 }
 
 .footer-right h4 {
-  margin-top: 5px;
-  padding: 0 25px;
+  margin-top: 2px;
+  padding: 0 15px;
   font-size: 100%;
  
 }
@@ -279,8 +285,8 @@ footer img {
   display: block;
 }
 .footer-right img {
-  width: 100px;
-  margin-top: 5px;
+  width: 50px;
+  margin-top: 2px;
 }
 @keyframes credit {
   0%   {color: white;}
