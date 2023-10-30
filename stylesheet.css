@@ -11,7 +11,9 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
+
 header {
   height:80px;
   width:100%;
@@ -29,20 +31,24 @@ header {
 .header-left {
   float:left;
 }
+
+
 .header-right {
   float: right;
+  overflow: hidden;
+  position: relative; 
 }
 .header-right a {
   line-height: 65px;
   padding: 8px 17px;
   color: white;
-  display:block;
   float: left;
   transition: 0.9s;
 }
 .header-right a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
 .menu-icon {
   color:white;
   float: right;
@@ -54,6 +60,17 @@ header {
   max-width: 1400px;
   padding: 0 5px;
   margin:0 auto;
+}
+.container-left img{
+  width: 150%;
+  padding: 0 0 0 10%;
+}
+.container-right {
+  float: right; 
+  overflow: hidden; 
+  display:inline; 
+  width: 60%; 
+  padding: 0 0 0 10%;
 }
 .fa {
   margin-right:5px;
@@ -73,6 +90,17 @@ header {
   letter-spacing: 1px;
   margin-bottom: 10px;
 
+}
+.isi-wrapper {
+  padding: 120px 0 20px 0;
+  background-size: 100% 120%, cover;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+.isi-wrapper h2 {
+
+  margin-top: 15px;
+  font-weight: normal;
 }
 h1  {
   color:  #7CFC00;
@@ -96,7 +124,8 @@ h1  {
 }
 
 .facebook {
-  background-color: #3b5998;
+  background-color: #006400
+  ;
 }
 .btn {
   padding: 12px 24px;
@@ -135,15 +164,32 @@ h1  {
   width: 25%;
 }
 
+
+.wahana h3 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #b3aeb5;
+  width: 80%;
+  display: inline;
+  font-size: 15px;
+  
+  font-weight: normal;
+}
+.wahana p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #b3aeb5;
+  width: 80%;
+  display: inline-block;
+  font-size: 15px;
+}
 .wahana-icon img{
   width: 95%;
   height: 180px;
 }
 
 .wahana-icon p {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 80%;
   color: #5f5d60;
 }
 
@@ -169,10 +215,18 @@ h1  {
   color: Black;
   width: 100%;
 }
-.wahana-icon p:hover {
+
+.wahana h3:hover {
   color: Black;
+  width: 100%;
+  font-size: 18px;
 }
 
+.wahana p:hover {
+  color: Black;
+  width: 100%;
+  font-size: 18px;
+}
 .heading h3 {
   font-weight: normal;
 }
@@ -216,8 +270,8 @@ h1  {
 }
 
 .section-pict img{
-	width: 90%;
-	height: 200px;
+	width: 80%;
+	height: 80px;
 }
 
 .clear {
@@ -234,6 +288,7 @@ footer {
   width:100%;
   background-color: #006400;
   color: white;
+  position: fixed;
 }
 
 .footer-top {
@@ -288,6 +343,11 @@ footer img {
   width: 50px;
   margin-top: 2px;
 }
+.footer-left img {
+  width: 80px;
+  margin-top: 2px;
+}
+
 @keyframes credit {
   0%   {color: white;}
   25%  {color: yellow;}
@@ -322,26 +382,50 @@ footer img {
   .txt-contents{
     font-size: 15px;
   }
+  .footer {
+    line-height: 0;
+    padding: 0;
+    float: none;
 
+  }
 }
 
 /* For Smartphone */
 @media all and (max-width: 670px) {  
+  
   .wahana {
     width: 50%;
   }
   footer {
+    height: 40px;
     font-size: 60%;
     padding: 10px 0;
   }
 
-  footer img {
-  width: 125px;
-  }
-
-  .footer-right h4 {
-  margin-top: 25px;
-  padding: 0 2px;
- 
-}  
+.isi-wrapper {
+  padding: 120px 0 20px 0;
 }
+.container-left img{
+  float: center;
+  padding: 0 0;
+}
+.container-right {
+  float: left;
+  padding: 0 0;
+  display:table; 
+  width: 90%; 
+  text-align: center;
+}
+
+  footer img {
+  width: 5px;
+  }
+.btn-wrapper img {
+  width: 80%;
+}
+  .footer-left {
+  display: none;
+}
+  .footer-right {
+    display: none;
+  }  
