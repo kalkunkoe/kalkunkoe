@@ -76,6 +76,13 @@ header {
   margin-right:5px;
 }
 
+iframe[src*=youtube] {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 100%;
+                    padding-bottom: 10px;
+                }
+
 .top-wrapper {
   padding: 180px 0 180px 0;
   background-image: url("images/photo_6336925230081094804_y.jpg");
@@ -141,7 +148,7 @@ h1  {
 }
 
 .wahana-wrapper {
-  height: 1050px;
+  height: 1650px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
   text-align: center;
@@ -394,7 +401,7 @@ footer img {
 @media all and (max-width: 670px) {  
   
   .wahana {
-    width: 50%;
+    width: 40%;
   }
   footer {
     height: 40px;
